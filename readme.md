@@ -48,11 +48,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Luke de Vries                          | Melvin Idema | Sam vd Leek                      |Jimmy Dekker        |
+| ---                                    | ---          | ---                              | ---                |
+| margin:0; werkt niet                   | n.v.t.       | Tips over de nav                 | blur nav           |
+| Elementen na relative en absolute      |              | Font van andere website toevoegen| Viewport animaties?|
+| Font via telefoon anders dan op desktop|              |                                  |                    |
 
 ### Verslag van meeting
 
