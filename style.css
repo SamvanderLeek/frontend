@@ -1,0 +1,135 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* BEGIN VAN DE HEADER */
+
+/* Header van de website */
+header {
+    background-color: #fbfbfb;
+    border: 1px solid #eaeaea;
+}
+
+/* Zorg dat de nav bar naast elkaar komt */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    /* Top right bottom left */
+    padding: 1em 0 1em 0;
+}
+
+/* Logo van website */
+header nav ul li a img {
+    width: 4em;
+}
+
+/* Eerste li geselecteerd; */
+header nav ul li:nth-child(1) {
+    flex-grow: 2;
+}
+
+/* De andere li items geslecteerd */
+header nav ul li+li {
+    flex-grow: 1;
+}
+
+/* De links in de nav bar */
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
+/* HEADER IS AFGELOPEN */
+
+
+/* BEGIN VAN DE MAIN */
+
+/* Selector van de div class="hero" */
+.hero {
+    height: 20em;
+    margin-top: 4em;
+}
+
+/* De background image (Zwart witte schoen) */
+.heroImage {
+    background-image: url("https://lilcustom.com/wp-content/uploads/2020/01/DSC00202-min.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+/* De h1 die over de img staat */
+.heroImage h1 {
+    /* font-family: CocoPuff; Moet ik nog toevoegen maar vragen */
+    font-size: 3em;
+    max-width: 4em;
+    text-transform: capitalize;
+    text-shadow: 3px 0px 0px #212121, 9px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* De p die over de img staat */
+.heroImage p {
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-shadow: 3px 0px 0px #212121, 9px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* button die over de img staat */
+.heroImage button {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin-top: 3em;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: .1em;
+    width: 100%;
+    max-width: 14em;
+}
+
+/* section van 2e deel main */
+.kwaliteit {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 2em 0 2em;
+}
+
+/* h2 in het 2e deel van main */
+.kwaliteit h2 {
+    padding: .5em;
+    margin: 4em 0 1em 0;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* de ul van section class="kwaliteit" */
+.kwaliteit ul {
+    list-style-type: circle;
+}
+
+/* de li van section class="kwaliteit" */
+.kwaliteit ul li {
+    color: grey;
+    text-transform: uppercase;
+    padding: .8em;
+    font-size: 1.3em
+}
+
+/* image van de roze schoen */
+.imageWrapper {
+    margin: 2em 1em 0 1em;
+}
+
+/* EINDE VAN MAIN */
