@@ -1,1 +1,1 @@
-// JavaScript Document
+console.log("werkt");
