@@ -55,7 +55,7 @@ header nav ul a {
 
 /* De background image (Zwart witte schoen) */
 .heroImage {
-    background-image: url("https://lilcustom.com/wp-content/uploads/2020/01/DSC00202-min.jpg");
+    background-image: url(images/headerimg.jpg);
     background-size: cover;
     background-position: center center;
     height: 30em;
