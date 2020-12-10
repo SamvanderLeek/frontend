@@ -48,7 +48,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -samen met je groepje opstellen-
 
-<![images/voortgang2.png]()
+<img src="images/voortgang2.png" width="375px" alt="Screenshot voortgang2">
 
 ### Verslag van meeting
 
