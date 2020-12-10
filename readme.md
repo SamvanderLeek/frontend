@@ -54,7 +54,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 | Elementen na relative en absolute      |              | Font van andere website toevoegen| Viewport animaties?|
 | Font via telefoon anders dan op desktop|              |                                  |                    |
 
-<img src="/voortgang2.jpg" width="375px" alt="Planning van week 2">
+<img src="images/voortgang2.png" width="375px" alt="Planning van week 2">
 
 ### Verslag van meeting
 
