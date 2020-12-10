@@ -1,135 +1,164 @@
 *, html {
-    margin: 0;
-    padding: 0;
+  margin:0;
 }
 
 /* BEGIN VAN DE HEADER */
 
 /* Header van de website */
 header {
+    position: sticky; top:0;
     background-color: #fbfbfb;
     border: 1px solid #eaeaea;
+    z-index: 1;
 }
 
 /* Zorg dat de nav bar naast elkaar komt */
 header nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    padding: inherit;
     /* Top right bottom left */
-    padding: 1em 0 1em 0;
 }
 
 /* Logo van website */
-header nav ul li a img {
-    width: 4em;
+#logowebsite {
+  width: 7em;
 }
 
-/* Eerste li geselecteerd; */
-header nav ul li:nth-child(1) {
-    flex-grow: 2;
+/* vergrootglas, winkelwagen menu */
+header nav ul li img {
+    width: 1em;
 }
 
-/* De andere li items geslecteerd */
-header nav ul li+li {
-    flex-grow: 1;
+.uitklapMenu {
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  top: 4em; right: 0;
 }
 
-/* De links in de nav bar */
-header nav ul a {
-    text-decoration: none;
-    color: black;
+.uitklapMenu ul {
+  background-color: pink;
+  flex-direction: column;
+  transform: translateX(110em);
 }
-/* HEADER IS AFGELOPEN */
+
+.uitklapMenu ul li {
+  padding-bottom: 1em;
+}
+/* Animatie hamburger menu */
+
+/* hiermee style je de button (die je niet ziet) */
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5 ease-in-out;
+  cursor: pointer;
+  /*border: 3px solid black;*/
+}
+
+/* Dit is het middelste streepje in het menu */
+.menu-btn__burger {
+  width: 2em;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+/* Het bovenste en onderste streepje in het menu */
+.menu-btn__burger:before,
+.menu-btn__burger:after {
+  content: '';
+  position: absolute;
+  width: 2em;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all .5s ease-in-out;
+}
+
+/* De hoogte van de lijntjes */
+.menu-btn__burger:before {
+  transform: translateY(-10px);
+}
+
+.menu-btn__burger:after {
+  transform: translateY(10px);
+}
+
+/* ANIMATIE */
+
+/* Mideelste streepje */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px); /* Schuift hiermee naar links */
+  background: transparent; /* zorgt dat het middelste streepje transparant wegschuift */
+  box-shadow: none; /* haalt de border shadow die om het lijntje zit weg */
+}
+
+/* Bovenste streepje */
+.menu-btn.open .menu-btn__burger:before {
+  transform: rotate(45deg) translate(35px, -35px);
+  background:red;
+}
+
+/* Onderste streepje */
+.menu-btn.open .menu-btn__burger:after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  background:red;
+}
+/* BRON VAN INFORMATIE: https://www.youtube.com/watch?v=dIyVTjJAkLw&t=350s */
 
 
 /* BEGIN VAN DE MAIN */
+main {
 
-/* Selector van de div class="hero" */
-.hero {
-    height: 20em;
-    margin-top: 4em;
 }
 
-/* De background image (Zwart witte schoen) */
-.heroImage {
-    background-image: url(images/headerimg.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 30em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    text-align: center;
+/* Section 1 */
+section:nth-of-type(1) img {
+  width: 100%;
+  position: absolute;
 }
 
-/* De h1 die over de img staat */
-.heroImage h1 {
-    /* font-family: CocoPuff; Moet ik nog toevoegen maar vragen */
-    font-size: 3em;
-    max-width: 4em;
-    text-transform: capitalize;
-    text-shadow: 3px 0px 0px #212121, 9px 4px 0px rgba(0, 0, 0, 0.15);
+.tekstOverImg {
+  position: relative;
+  text-align: center;
+  padding: 3em 1em;
+  color: white;
+
 }
 
-/* De p die over de img staat */
-.heroImage p {
-    margin-top: 1em;
-    font-size: 1.5em;
-    text-shadow: 3px 0px 0px #212121, 9px 4px 0px rgba(0, 0, 0, 0.15);
+.tekstOverImg h1 {
+  text-shadow: 1px 0px 1px black;
+  text-transform: uppercase;
 }
 
-/* button die over de img staat */
-.heroImage button {
-    background-color: white;
-    color: black;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 10px;
-    padding: 1.5em;
-    margin-top: 3em;
-    font-weight: 700;
-    font-size: 1em;
-    letter-spacing: .1em;
-    width: 100%;
-    max-width: 14em;
+.tekstOverImg p {
+  text-shadow: 1px 0px 1px black;
 }
 
-/* section van 2e deel main */
+
+/* Section 2 */
+
+
+/* Section 3 */
+section:nth-of-type(3) {
+  padding: 1em;
+}
+
 .kwaliteit {
-    display: flex;
-    flex-direction: column;
-    margin: 2em 2em 0 2em;
-}
 
-/* h2 in het 2e deel van main */
-.kwaliteit h2 {
-    padding: .5em;
-    margin: 4em 0 1em 0;
-    font-size: 2em;
-    text-transform: uppercase;
 }
-
-/* de ul van section class="kwaliteit" */
-.kwaliteit ul {
-    list-style-type: circle;
-}
-
-/* de li van section class="kwaliteit" */
 .kwaliteit ul li {
-    color: grey;
-    text-transform: uppercase;
-    padding: .8em;
-    font-size: 1.3em
+
 }
 
-/* image van de roze schoen */
-.imageWrapper {
-    margin: 2em 1em 0 1em;
+.kwaliteit img {
+  width: 100%;
 }
-
-/* EINDE VAN MAIN */
