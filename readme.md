@@ -6,7 +6,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
+1. https://www.youtube.com/watch?v=dIyVTjJAkLw&t=350s
 2. -bron 2-
 3. -...-
 
@@ -38,7 +38,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Alles ging wel goed alleen het toevoegen van een font was nog niet gelukt.-
 
 **Screenshot(s):**
 
@@ -67,13 +67,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -Blauw-
+**Je startniveau:** Blauw
 
-**Je focus:** -Responsive-
+**Je focus:** Responsive
 
-**Je opdracht:** -https://lilcustom.com/-
+**Je opdracht:** https://lilcustom.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
