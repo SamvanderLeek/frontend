@@ -48,13 +48,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -samen met je groepje opstellen-
 
-| Luke de Vries                          | Melvin Idema | Sam vd Leek                      |Jimmy Dekker        |
-| ---                                    | ---          | ---                              | ---                |
-| margin:0; werkt niet                   | n.v.t.       | Tips over de nav                 | blur nav           |
-| Elementen na relative en absolute      |              | Font van andere website toevoegen| Viewport animaties?|
-| Font via telefoon anders dan op desktop|              |                                  |                    |
-
-<img src="images/voortgang2" width="375px" alt="Planning van week 2">
+<![images/voortgang2.png]()
 
 ### Verslag van meeting
 
