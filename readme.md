@@ -48,7 +48,21 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -samen met je groepje opstellen-
 
-<img src="images/voortgang2.png" width="375px" alt="Screenshot voortgang2">
+| Luke de Vries |
+|Waarom is ‘stroke’ geen css eigenschap?|
+|Bij het drukken op een button herlaad alles ipv de js-actie te ondernemen. |
+|Hoe klap ik een ‘uitklapmenu’ uit in animatie?|
+|Form heeft geen action. Maar weet niet wat ik moet invullen.|
+|Melvin|
+|Sam|
+|Font die gedownload is gebruiken.|
+|Hoe kan ik dit menu uit laten klappen als ik erop klik?|
+|Moet je al een grid gebruiken op een small screen of alleen als er een breakpoint komt?|
+|Wat betekent de :after en de :before precies? (weet het zelf wel ongeveer)|
+|Jimmy|
+|De Apple website heeft vaak updates, hoe kan ik dat het beste aanpakken ?|
+
+
 
 ### Verslag van meeting
 
