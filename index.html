@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -14,47 +14,43 @@
 
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li><img id="logowebsite" src="images/zwartlogo.png" alt="logo van de website"></li>
-        <li><img src="images/vergrootglas.png" alt="vergrootglas"></li>
-        <li><img src="images/winkeltas.png" alt="winkeltas"></li>
-
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
-        <div class="uitklapMenu">
-          <ul>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>Reviews</li>
-            <li>Aangepaste aanvraag</li>
-            <li>Over</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </ul>
+  <header class>
+    <nav class="navbar">
+      <div class="brand-title">LIL CUSTOM</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
+
 <main>
-  <section>
-    <img src="images/zwartwit.jpg" alt="foto van een custom schoen">
+  <section class="headerimg">
+
     <div class="tekstOverImg">
-      <h1>Lil Custom</h1>
+      <h1>LIL CUSTOM</h1>
       <p>Happiness is only one pair of custom sneakers away.</p>
-      <button type="button" name="Over mij">Over mij</button>
+      <a href="overmij.html">Over Mij</a>
     </div>
 
   </section>
 
-  <section>
+  <section class="knoppen-die-niks-doen">
     <button type="button" name="Naar webshop">Naar de webshop</button>
     <button type="button" name="Eigen design">Eigen design aanvragen</button>
   </section>
 
-  <section class="kwaliteit">
+  <section class="wat-wil-ik">
+    <div>
     <h2>Kwaliteit</h2>
       <ul>
         <li>Waterproof</li>
@@ -64,14 +60,15 @@
         <li>Hoge kwaliteit</li>
         <li>100% uitblinked</li>
       </ul>
+      </div>
       <img src="images/rozeschoen.jpg" alt="Afbeelding van een custom schoen">
   </section>
 
 </main>
 
-
-    <footer>
+  <footer>
+        <p>&copy; Made by: Sam van der Leek 2020</p>
         <script src="scripts/script.js"></script>
-    </footer>
+  </footer>
 </body>
 </html>

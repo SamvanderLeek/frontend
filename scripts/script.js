@@ -1,17 +1,9 @@
-console.log("werkt");
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-/* HAMBURGER MENU */
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+  toggleButton.classList.toggle('active')
+})
 
-/* const is een waarde die niet veranderd */
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false; /* let is de nieuwe versie van var */
-menuBtn.addEventListener('click', () => {
-  if (!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-});
-/* BRON: https://www.youtube.com/watch?v=dIyVTjJAkLw&t=350s */
+/* BRON: https://www.youtube.com/watch?v=At4B7A4GOPg */

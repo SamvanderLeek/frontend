@@ -1,164 +1,505 @@
-*, html {
-  margin:0;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+}
 /* BEGIN VAN DE HEADER */
 
-/* Header van de website */
-header {
-    position: sticky; top:0;
-    background-color: #fbfbfb;
-    border: 1px solid #eaeaea;
-    z-index: 1;
-}
 
-/* Zorg dat de nav bar naast elkaar komt */
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    padding: inherit;
-    /* Top right bottom left */
-}
+/* Nav bar */
 
-/* Logo van website */
-#logowebsite {
-  width: 7em;
-}
-
-/* vergrootglas, winkelwagen menu */
-header nav ul li img {
-    width: 1em;
-}
-
-.uitklapMenu {
+/* Dit is de hele balk */
+.navbar {
   display: flex;
-  position: fixed;
-  z-index: 5;
-  top: 4em; right: 0;
-}
-
-.uitklapMenu ul {
-  background-color: pink;
-  flex-direction: column;
-  transform: translateX(110em);
-}
-
-.uitklapMenu ul li {
-  padding-bottom: 1em;
-}
-/* Animatie hamburger menu */
-
-/* hiermee style je de button (die je niet ziet) */
-.menu-btn {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  transition: all .5 ease-in-out;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 56px;
+}
+
+
+/* Naam merk */
+.brand-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: .8em;
+}
+
+@media (min-width:500px) {
+  .brand-title {
+    font-size: 1.5em;
+  }
+  .navbar {
+    height: 70px;
+  }
+}
+
+.navbar-links{
+  background-color: #333333;
+  transition: .3s;
+}
+
+
+/* Items in de nav */
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+/* li in de nav */
+.navbar-links li {
+  list-style: none;
+}
+
+
+/* De navigatie links */
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  padding: 1.5em;
+  display: block;
+}
+
+
+/* Toegangelijkheid nav items */
+.navbar-links li:hover {
+  background-color: #555;
   cursor: pointer;
-  /*border: 3px solid black;*/
+}
+.navbar-links li a:focus {
+  transition: .3s;
+  background-color: #555;
+  border: 1px solid white;
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
-/* Dit is het middelste streepje in het menu */
-.menu-btn__burger {
-  width: 2em;
-  height: 4px;
-  background: black;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-  transition: all .5s ease-in-out;
+.navbar-links li a:active {
+  background-color: #555;
+  text-decoration: underline;
 }
 
-/* Het bovenste en onderste streepje in het menu */
-.menu-btn__burger:before,
-.menu-btn__burger:after {
-  content: '';
+
+/* Het hamburger menu */
+.toggle-button {
   position: absolute;
-  width: 2em;
-  height: 4px;
-  background: black;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
-  transition: all .5s ease-in-out;
+  top: 1em;
+  right: 1em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
 }
 
-/* De hoogte van de lijntjes */
-.menu-btn__burger:before {
-  transform: translateY(-10px);
+@media (max-width: 500px) {
+  .toggle-button {
+    display: flex;
+  }
+
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  transition: .4s;
 }
 
-.menu-btn__burger:after {
-  transform: translateY(10px);
+
+/* Class wordt aangemaakt in js */
+.active .bar:first-of-type{
+  transform: rotate(50deg);
+  transform-origin: left top;
 }
 
-/* ANIMATIE */
-
-/* Mideelste streepje */
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px); /* Schuift hiermee naar links */
-  background: transparent; /* zorgt dat het middelste streepje transparant wegschuift */
-  box-shadow: none; /* haalt de border shadow die om het lijntje zit weg */
+.active .bar:nth-of-type(2){
+  transform: translateX(-10px);
+  opacity: 0;
 }
 
-/* Bovenste streepje */
-.menu-btn.open .menu-btn__burger:before {
-  transform: rotate(45deg) translate(35px, -35px);
-  background:red;
+.active .bar:nth-of-type(3){
+  transform: rotate(-50deg);
+  transform-origin: left bottom;
 }
 
-/* Onderste streepje */
-.menu-btn.open .menu-btn__burger:after {
-  transform: rotate(-45deg) translate(35px, 35px);
-  background:red;
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 1em .5em;
+  }
+
+  .navbar-links {
+    display: flex;
+    width: 100%;
+    opacity: 0;
+    transition: .3s;
+  }
+  .navbar-links.active {
+    opacity: 1;
+  }
+    .navbar-links{
+    background-color: rgba(31,31,31, 1);
+  }
 }
-/* BRON VAN INFORMATIE: https://www.youtube.com/watch?v=dIyVTjJAkLw&t=350s */
+/* BRON: https://www.youtube.com/watch?v=At4B7A4GOPg */
 
 
 /* BEGIN VAN DE MAIN */
-main {
 
-}
-
-/* Section 1 */
-section:nth-of-type(1) img {
-  width: 100%;
-  position: absolute;
-}
-
+/* SECTION 1 PAGINA 1 */
 .tekstOverImg {
-  position: relative;
+  background-image: url("https://lilcustom.com/wp-content/uploads/2020/01/DSC00202-min.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 15em;
+  color: white;
   text-align: center;
   padding: 3em 1em;
+  text-shadow: 1px 0px 1px black;
+  font-size: 1em;
+}
+
+@media (min-width:500px) {
+  .tekstOverImg {
+    font-size: 1.5em;
+  }
+}
+
+
+/* Link onder tekst */
+section:nth-of-type(1) div a{
+  font-family: montserrat;
+  padding: .5em;
+  color: #555;
+  font-size: .8em;
+  background-color: white;
+  border:none;
+  border-radius: .5em;
+  box-shadow: 3px 3px 3px  #555;
+}
+
+section:nth-of-type(1) div a {
+  text-decoration: none;
+}
+
+@media (min-width: 400px) {
+section:nth-of-type(1) div a {
+  font-size: 1em;
+  }
+}
+
+
+/* Toegangelijkheid link onder tekst */
+section:nth-of-type(1) a:hover {
+  transition: .3s;
+  cursor: pointer;
+  border: 3px solid #555;
+  text-decoration: underline;
+}
+
+section:nth-of-type(1) div a:focus {
+  transition: .3s;
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+section:nth-of-type(1) div a:active {
+  cursor: progress;
+}
+
+
+/* SECTION 1 PAGINA 2 */
+.headerimg{
+  background-image: url(https://lilcustom.com/wp-content/uploads/2020/01/header.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-top: 55px;
+}
+
+.tekstOverImgPagina2 {
+  height: 15em;
   color: white;
-
+  text-align: center;
+  padding: 3em 1em;
+  text-shadow: 2px 0px 1px black;
+  font-size: 1em;
+  background-color: rgba(0,0,0,.4);
 }
 
-.tekstOverImg h1 {
-  text-shadow: 1px 0px 1px black;
-  text-transform: uppercase;
+@media (min-width:500px) {
+  .tekstOverImgPagina2 {
+    font-size: 1.5em;
+  }
+  .headerimg{
+    padding-top: 70px;
+  }
 }
 
-.tekstOverImg p {
-  text-shadow: 1px 0px 1px black;
+
+/* SECTION 2 PAGINA 1 */
+.knoppen-die-niks-doen {
+  display: flex;
+  flex-direction: column;
 }
 
-
-/* Section 2 */
-
-
-/* Section 3 */
-section:nth-of-type(3) {
+.knoppen-die-niks-doen button {
+  justify-content: center;
+  font-size: .6em;
+  font-family: montserrat;
+  margin: 1em;
   padding: 1em;
+  width: 20em;
 }
 
-.kwaliteit {
-
+@media (min-width:300px) {
+  section:nth-of-type(2) button {
+    font-size: .8em;
+  }
 }
-.kwaliteit ul li {
 
+@media (min-width:500px) {
+  section:nth-of-type(2) button {
+    font-size: 1em;
+  }
 }
 
-.kwaliteit img {
-  width: 100%;
+
+/* Bovenste button */
+section:nth-of-type(2) button:nth-of-type(1) {
+  margin: 1em auto 1em auto;
+  border: 2px solid #555;
+  border-radius: 10px;
+  background-color: white;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Toegangelijkheid bovenste button */
+section:nth-of-type(2) button:nth-of-type(1):hover {
+  transition: .3s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+section:nth-of-type(2) button:nth-of-type(1):focus {
+  transition: .3s;
+  text-decoration: underline;
+  font-size: 1.5em;
+  transform: scale(1.1);
+}
+
+section:nth-of-type(2) button:nth-of-type(1):active {
+  cursor: progress;
+}
+
+
+/* Onderste button */
+section:nth-of-type(2) button:nth-of-type(2) {
+  margin: 1em auto 1em auto;
+  border:none;
+  border-radius: 10px;
+  background-color: #555;
+  color: white;
+  font-weight: 600;
+}
+
+/* Toegangelijkheid onderste button */
+section:nth-of-type(2) button:nth-of-type(2):hover {
+  transition: .3s;
+  cursor: pointer;
+  border: 2px solid #555;
+  transform: scale(1.1);
+}
+
+section:nth-of-type(2) button:nth-of-type(2):focus {
+  transition: .3s;
+  text-decoration: underline;
+  transform: scale(1.1);
+  font-size: 1.5em;
+}
+
+section:nth-of-type(2) button:nth-of-type(2):active {
+  cursor: progress;
+}
+
+
+/* SECTION 2 PAGINA 2 */
+.over-mij{
+  padding: 2em;
+  align-items: center;
+  text-align: center;
+  font-size: .8em;
+}
+
+img.icoontjes {
+  width: 3em;
+  margin-top: 1em;
+}
+
+@media (min-width:650px) {
+  .over-mij {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 2em 0 2em;
+  }
+}
+
+  .over-mij p {
+    padding: 0 1em 0 1em;
+  }
+}
+
+@media (min-width:800px) {
+  .over-mij p {
+    font-size: 1.2em;
+  }
+}
+
+
+/* SECTION 3 PAGINA 1 */
+.wat-wil-ik {
+  padding:1em;
+}
+
+.wat-wil-ik h2 {
+  font-size: 1em;
+}
+
+.wat-wil-ik ul li {
+  font-size: .8em;
+  margin: .5em;
+}
+
+.wat-wil-ik img {
+  width: 10em;
+}
+
+
+@media (min-width:300px) {
+  .wat-wil-ik {
+    padding:2em;
+  }
+}
+
+  @media (min-width:500px) {
+    .wat-wil-ik {
+      padding:3em;}
+
+    .wat-wil-ik img {
+    width: 20em;
+  }
+}
+
+
+  .wat-wil-ik h2 {
+    font-size: 1.2em;
+  }
+
+  .wat-wil-ik ul li {
+    font-size: 1em;
+    margin: .5em;
+  }
+}
+
+@media (min-width:700px) {
+  .wat-wil-ik {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+  .wat-wil-ik h2 {
+    font-size: 2em;
+  }
+
+  .wat-wil-ik ul li {
+    font-size: 1.5em;
+  }
+}
+
+
+/* SECTION 3 PAGINA 2 */
+
+.wie-ben-ik {
+  padding: 2em;
+  background-color: #f6f6f6;
+}
+
+.afrobros {
+  width: 10em;
+}
+
+@media (min-width:400px) {
+  .wie-ben-ik {
+    padding:4em;
+  }
+}
+
+@media (min-width:500px) {
+  .wie-ben-ik {
+    padding:6em;
+  }
+  .afrobros {
+    width: 15em;
+  }
+}
+
+@media (min-width:800px) {
+  .wie-ben-ik {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .afrobros {
+    width: 20em;
+    padding:2em 0 0 10em;
+  }
+}
+
+@media (min-width:1000px) {
+  .afrobros {
+    width: 25em;
+  }
+}
+
+@media (min-width:1200px) {
+  .afrobros {
+    width: 35em;
+  }
+}
+
+/* EINDE VAN DE MAIN */
+
+
+/* BEGIN FOOTER */
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+  color: lightGrey;
 }

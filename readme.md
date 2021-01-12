@@ -6,31 +6,32 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. https://www.youtube.com/watch?v=dIyVTjJAkLw&t=350s
-2. -bron 2-
-3. -...-
+1. https://www.youtube.com/watch?v=At4B7A4GOPg
+2. https://css-tricks.com/almanac/
+3. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+4. https://css-tricks.com/snippets/css/complete-guide-grid/
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+De responsive navigatie maken was nog lastig, dat heb ik ook gemaakt met behulp van een youtube video. De content vormgeven was soms ook lastig maar door css-tricks was het wel goed te doen.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
+<img src="images/pagina1.png" width="375px" alt="Homepage van Lil Custom">
+<img src="images/pagina2.png" width="375px" alt="De talenten van Lil Custom">
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Alles was duidelijk en had geen vragen meer. Dit had ik al opgelost door het opzoeken op internet of vragen aan een medestudent.
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Helemaal opnieuw begonnen met de website, want de 1e versie was nog onduidelijk voor mezelf.
 
 
 
@@ -38,11 +39,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--Alles ging wel goed alleen het toevoegen van een font was nog niet gelukt.-
+Alles ging wel goed alleen het toevoegen van een font was nog niet gelukt.
 
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
 
 ### Agenda voor meeting
 
@@ -66,7 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Tijdens het gesprek de punten genoteerd, zodat ik deze later kon toepassen.
 
 
 
@@ -86,8 +84,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/pagina1.png" width="375px" alt="Homepage van Lil Custom">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/pagina2.png" width="375px" alt="De talenten van Lil Custom">
